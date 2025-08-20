@@ -14,7 +14,14 @@
   </style>
 </head>
 <body>
-  <h2>Nạp thẻ cào</h2>
+<H1 style="position: absolute; left: 450px; top: 10px; height: 70px; line-height: 70px; font-size: 30px; color: rgb(255, 255, 255); text-align: center; text-shadow: rgb(26, 26, 26) -2px -4px 4px, rgb(26, 26, 26) 0px -4px 4px, rgb(26, 26, 26) 4px -4px 4px, rgb(26, 26, 26) -4px 0px 4px, rgb(26, 26, 26) 4px 0px 4px, rgb(26, 26, 26) -4px 4px 4px, rgb(26, 26, 26) 0px 4px 4px, rgb(26, 26, 26) 4px 4px 4px;">SHOP VẬT PHẨM GTD</H1>
+<img style="position: absolute; top: 140px; left: 60px;" src="./image/CW_mh_heroicon_1.png" alt="">
+<h1 style="position: absolute;left: 88px;top: 170px; height: 50px; line-height: 70px; font-size: 25px; color: rgb(255, 255, 255); text-align: center; text-shadow: rgb(26, 26, 26) -2px -4px 4px, rgb(26, 26, 26) 0px -4px 4px, rgb(26, 26, 26) 4px -4px 4px, rgb(26, 26, 26) -4px 0px 4px, rgb(26, 26, 26) 4px 0px 4px, rgb(26, 26, 26) -4px 4px 4px, rgb(26, 26, 26) 0px 4px 4px, rgb(26, 26, 26) 4px 4px 4px">50K</h1>
+<img style="position: absolute; top: 250px; left: 60px;" src="./image/CW_mh_heroicon_4.png" alt="">
+<h1 style="position: absolute;left: 88px;top: 280px; height: 50px; line-height: 70px; font-size: 25px; color: rgb(255, 255, 255); text-align: center; text-shadow: rgb(26, 26, 26) -2px -4px 4px, rgb(26, 26, 26) 0px -4px 4px, rgb(26, 26, 26) 4px -4px 4px, rgb(26, 26, 26) -4px 0px 4px, rgb(26, 26, 26) 4px 0px 4px, rgb(26, 26, 26) -4px 4px 4px, rgb(26, 26, 26) 0px 4px 4px, rgb(26, 26, 26) 4px 4px 4px">50K</h1>
+<img style="position: absolute; top: 360px; left: 60px;" src="./image/CW_mh_heroicon_7.png" alt="">
+<h1 style="position: absolute;left: 88px;top: 390px; height: 50px; line-height: 70px; font-size: 25px; color: rgb(255, 255, 255); text-align: center; text-shadow: rgb(26, 26, 26) -2px -4px 4px, rgb(26, 26, 26) 0px -4px 4px, rgb(26, 26, 26) 4px -4px 4px, rgb(26, 26, 26) -4px 0px 4px, rgb(26, 26, 26) 4px 0px 4px, rgb(26, 26, 26) -4px 4px 4px, rgb(26, 26, 26) 0px 4px 4px, rgb(26, 26, 26) 4px 4px 4px">50K</h1>
+  <div class="form-box">
   <form id="cardForm">
     <select id="loaiThe" required>
       <option value="">--Chọn loại thẻ--</option>
@@ -25,8 +32,28 @@
     <input type="text" id="menhGia" placeholder="Mệnh giá" required />
     <input type="text" id="soThe" placeholder="Mã thẻ" required />
     <input type="text" id="seri" placeholder="Seri" required />
+    <select id="Value" required>
+      <option value="">--Chọn đồ cần mua--</option>
+      <option value="Viettel">Ruby</option>
+      <option value="Vinaphone">Đá Tím</option>
+      <option value="Mobifone">Hero</option>
+      <option value="Mobifone">Tháp</option>
+      </select>
+     <form id="cardForm">
+    <select id="server" required>
+      <option value="">--Server--</option>
+      <option value="Viettel">AMO</option>
+      <option value="Vinaphone">ATV</option>
+      <option value="Mobifone">LG</option>
+      <option value="Mobifone">SS</option>
+      <option value="Mobifone">IOS</option>
+    </select>
     <button type="submit">Nạp thẻ</button>
   </form>
+</div>
+<!-- Popup -->
+  <div id="popup" class="popup"></div>
+  <script src="popup.js"></script>
   <div id="msg"></div>
 </body>
 </html>
