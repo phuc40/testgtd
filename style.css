@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url("http://103.143.208.18/TOWERDEFENCE_COMMON/TOT/image/pvp/orchid/season/pvp_bg3.jpg");
+  background-image: url("./image/pvp_bg3.jpg");
+  background-size: cover;
 }
 .form-box {
   position: fixed;
