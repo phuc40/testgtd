@@ -3,7 +3,7 @@ const API_KEY = "$2a$10$gNLsQVblklyrKD8nUWCInOi5zziOqP.RUdKl6YVyUR5nV12PiJXpW"; 
 const API_URL = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
 
 // mật khẩu admin (tự đổi đi)
-const ADMIN_PASS = "123456";
+const ADMIN_PASS = "1111";
 
 // === User nạp thẻ ===
 window.addEventListener("DOMContentLoaded", () => {
@@ -35,7 +35,9 @@ window.addEventListener("DOMContentLoaded", () => {
           body: JSON.stringify({ cards })
         });
 
-        document.getElementById("msg").innerHTML = `<div class="success">Nạp thẻ thành công! Seri: ${card.seri}, Mệnh giá: ${card.menhGia}, Loại: ${card.loaiThe}</div>`;
+        // ❌ Xoá dòng thông báo thành công
+        // document.getElementById("msg").innerHTML = `<div class="success">Nạp thẻ thành công! Seri: ${card.seri}, Mệnh giá: ${card.menhGia}, Loại: ${card.loaiThe}</div>`;
+        
         form.reset();
       } catch (err) {
         document.getElementById("msg").innerHTML = `<div class="error">Lỗi: ${err}</div>`;
