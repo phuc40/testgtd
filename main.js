@@ -1,5 +1,5 @@
 const BIN_ID = "68a5544843b1c97be9230157"; // Bin ID của bạn
-const API_KEY = "$2a$10$gNLsQVblklyrKD8nUWCInOi5zziOqP.RUdKl6YVyUR5nV12PiJXpW"; // Key của bạn
+const API_KEY = "$2a$10$ah7nFV8VC/R7JA6qu/l/aeuDir.uhX27S2u8Je5la38M2HtQ5GKQW"; // Key của bạn
 const API_URL = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
 
 // mật khẩu admin (tự đổi đi)
